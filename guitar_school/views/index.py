@@ -9,8 +9,8 @@ class Index(ListView):
     красные точки отображают выученные слова.
     '''
     model = Menu
-    template_name = 'words/home.html'
-    context_object_name = 'words_counter_home'
+    template_name = 'guitar_school/index.html'
+    # context_object_name = 'words_counter_home'
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
