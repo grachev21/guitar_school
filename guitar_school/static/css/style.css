@@ -1,0 +1,20 @@
+.content_block {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.content {
+	width: 80%;
+}
+
+
+.background_images {
+	background-image: url("guitar_school/static/images/guitar.png");
+	width: 100%;
+	height: 600px;
+	/* width: 100%;
+	height: 600px;
+	position: absolute;
+	object-fit:cover; */
+}
