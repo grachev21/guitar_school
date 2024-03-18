@@ -1,3 +1,9 @@
+@import url("./logo.css");
+@import url("./settings.css");
+
+
+
+
 .content_block {
 	display: flex;
 	align-items: center;
@@ -8,13 +14,15 @@
 	width: 80%;
 }
 
-
 .background_images {
-	background-image: url("guitar_school/static/images/guitar.png");
+	background-color: red;
+}
+
+.background_images > img {
 	width: 100%;
 	height: 600px;
-	/* width: 100%;
-	height: 600px;
 	position: absolute;
-	object-fit:cover; */
+	object-fit:cover; 
 }
+
+
