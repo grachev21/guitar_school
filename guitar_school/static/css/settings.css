@@ -1,8 +1,7 @@
+
 /* Main */
-
-
 html {
-	background: var(--background-color);
+	background: white;
 }
 /*
 	TODO remove settings on BODY since we can't namespace it.
@@ -38,8 +37,7 @@ th,
 td {
 	margin: 0;
 	padding: 0;
-  font-family: 'Ubuntu', sans-serif;
-  max-width: 100%;
+	max-width: 100%;
 }
 table {
 	border-collapse: collapse;
@@ -75,11 +73,6 @@ th {
 	text-align: left;
 }
 
-/* h1,h2,h3,h4,h5, */
-/* h6 { */
-/* 	font-size:100%; */
-/* 	font-weight:normal; */
-/* } */
 
 q:before,
 q:after {
@@ -100,7 +93,6 @@ sub {
 input,
 textarea,
 select {
-	font-family: inherit;
 	font-size: inherit;
 	font-weight: inherit;
 	font-size: 100%; /*to enable resizing for IE*/

@@ -1,7 +1,32 @@
-@import url("./logo.css");
-@import url("./settings.css");
 
 
+
+
+@font-face {
+    font-family: 'Play-Regular';
+    src: url(../font/Play/Play-Regular.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: 'Play-Bold';
+	src: url(../font/Play/Play-Bold.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: 'Ubuntu-Regular';
+	src: url(../font/Ubuntu/Ubuntu-Regular.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: 'FiraSans-Bold';
+	src: url(../font/Fira_Sans/FiraSans-Bold.ttf);
+}
+
+
+@font-face {
+	font-family: 'FiraSans-Medium';
+	src: url(../font/Fira_Sans/FiraSans-Medium.ttf);
+}
 
 
 .content_block {
@@ -11,18 +36,26 @@
 }
 
 .content {
-	width: 80%;
+	width: 95%;
 }
 
 .background_images {
-	background-color: red;
+	display: flex;
+    justify-content: flex-start;
+    background-image: url(../images/guitar.png);
+    width: 100%;
+    height: 700px;
+    background-position: center center;
+    background-size: cover;
+    align-items: center;
+    flex-direction: column;
+
 }
 
-.background_images > img {
+.background_images:before {
+	content: '';
 	width: 100%;
-	height: 600px;
+	height: 700px;
 	position: absolute;
-	object-fit:cover; 
+	background-color:rgba(20, 39, 54, 0.3);
 }
-
-

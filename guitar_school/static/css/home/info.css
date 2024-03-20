@@ -1,0 +1,39 @@
+.info_block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.info_block>.title {
+    color: rgb(59, 59, 59);
+    font-family: 'Play-Bold', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.info_block>.text {
+    font-family: 'Play-Regular';
+    margin-top: 40px;
+    width: 50%;
+    text-align: center;
+    color: rgb(102, 102, 102);
+}
+
+.info_block>.button {
+    font-family: 'Play-Regular';
+    margin-top: 40px;
+    border: 3px solid black;
+    padding: 20px 24px 18px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.info_block>.button:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+

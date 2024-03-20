@@ -1,0 +1,25 @@
+.slogan {
+    font-family: 'Play-Bold', sans-serif;
+    color: white;
+    display: flex;
+    width: 95%;
+    height: 100%;
+    font-size: 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 50;
+}
+
+.slogan >.title_slogan {
+    letter-spacing: 20px;
+    text-align: center;
+    width: 700px;
+}
+
+.slogan > .comment {
+    font-family: 'Play-Regular', sans-serif;
+    margin-top: 50px;
+    letter-spacing: 3px;
+    font-size: 18px;
+}

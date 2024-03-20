@@ -1,4 +1,5 @@
 {% load static %}
+{% load TagConfig %}
 
 <!doctype html>
 <html lang="en">
@@ -8,6 +9,7 @@
 
 
         <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
+        <script src="{% static 'js/home/icons.js' %}"></script>
     </head>
 
     <body>
@@ -16,9 +18,29 @@
                 </header>
         <div class="content_block">
             <div class="content">
-                <main></main>
+                {% line %}
+                {% block info %}{% endblock info %}
+                {% line %}
+                {% block gallery %}{% endblock gallery %}
+                {% line %}
+                    
+                    
             </div>
         </div>
 
+        <footer>
+            {% block footer %}{% endblock footer %}
+        </footer>
     </body>
+    {% static '' %}
+    <style>
+        
+        @import url("{% static 'css/settings.css' %}");
+        @import url("./home/logo.css");
+        @import url("./home/menu.css");
+        @import url("./home/slogan.css");
+        @import url("./home/info.css");
+        @import url("./home/gallery.css");
+        @import url("./home/footer.css");
+    </style>
 </html>
