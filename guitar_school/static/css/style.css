@@ -1,34 +1,5 @@
 
 
-
-
-@font-face {
-    font-family: 'Play-Regular';
-    src: url(../font/Play/Play-Regular.ttf) format('truetype');
-}
-
-@font-face {
-	font-family: 'Play-Bold';
-	src: url(../font/Play/Play-Bold.ttf) format('truetype');
-}
-
-@font-face {
-	font-family: 'Ubuntu-Regular';
-	src: url(../font/Ubuntu/Ubuntu-Regular.ttf) format('truetype');
-}
-
-@font-face {
-	font-family: 'FiraSans-Bold';
-	src: url(../font/Fira_Sans/FiraSans-Bold.ttf);
-}
-
-
-@font-face {
-	font-family: 'FiraSans-Medium';
-	src: url(../font/Fira_Sans/FiraSans-Medium.ttf);
-}
-
-
 .content_block {
 	display: flex;
 	align-items: center;

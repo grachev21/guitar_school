@@ -7,9 +7,10 @@
         <title>Title</title>
         <meta charset="utf-8" />
 
-
         <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
-        <script src="{% static 'js/home/icons.js' %}"></script>
+        <script src="{% static 'js/icons.js' %}"></script>
+
+
     </head>
 
     <body>
@@ -31,16 +32,35 @@
         <footer>
             {% block footer %}{% endblock footer %}
         </footer>
+        <style>
+            @import url("{% static 'css/settings.css' %}");
+            @import url("{% static 'css/home/footer.css' %}");
+            @import url("{% static 'css/home/gallery.css' %}");
+            @import url("{% static 'css/home/info.css' %}");
+            @import url("{% static 'css/home/master_music.css' %}");
+            @import url("{% static 'css/home/menu.css' %}");
+            @import url("{% static 'css/home/slogan.css' %}");
+
+            @font-face {
+                font-family: 'Play-Regular';
+                src: url("{% static 'font/Play/Play-Regular.ttf' %}") format('truetype');
+            }
+            @font-face {
+                font-family: 'Play-Bold';
+                src: url("{% static 'font/Play/Play-Bold.ttf' %}") format('truetype');
+            }
+            @font-face {
+                font-family: 'Ubuntu-Regular';
+                src: url("{% static 'font/Ubuntu/Ubuntu-Regular.ttf' %}") format('truetype');
+            }
+            @font-face {
+                font-family: 'FiraSans-Bold';
+                src: url("{% static 'font/Fira_Sans/FiraSans-Bold.ttf' %}");
+            }
+            @font-face {
+                font-family: 'FiraSans-Medium';
+                src: url("{% static 'font/Fira_Sans/FiraSans-Medium.ttf' %}");
+            }
+        </style>
     </body>
-    {% static '' %}
-    <style>
-        
-        @import url("{% static 'css/settings.css' %}");
-        @import url("./home/logo.css");
-        @import url("./home/menu.css");
-        @import url("./home/slogan.css");
-        @import url("./home/info.css");
-        @import url("./home/gallery.css");
-        @import url("./home/footer.css");
-    </style>
 </html>

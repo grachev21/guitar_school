@@ -1,5 +1,7 @@
 {% load static %}
 
+
+{% if color == "black" %}
 <div class="network">
     <img src="{% static 'icons/icons8-viber-50.png' %}" alt="">
     <img src="{% static 'icons/icons8-vk-com-50.png' %}" alt="">
@@ -7,11 +9,29 @@
     <img src="{% static 'icons/icons8-почта-50.png' %}" alt="">
     <img src="{% static 'icons/icons8-телеграм-50.png' %}" alt="">
 </div>
+{% endif %}
+    
 
 
+{% if color == "white" %}
+<div class="network">
+    <img src="{% static 'icons/icons8-viber-50-invert.png' %}" alt="">
+    <img src="{% static 'icons/icons8-vk-com-50-invert.png' %}" alt="">
+    <img src="{% static 'icons/icons8-youtube-50-invert.png' %}" alt="">
+    <img src="{% static 'icons/icons8-почта-50-invert.png' %}" alt="">
+    <img src="{% static 'icons/icons8-телеграм-50-invert.png' %}" alt="">
+</div>
+{% endif %}
+    
+
+
+    
+
+    
+
+    
 
 <style>
-
 .network {
     padding: 30px;
     margin-top: 40px;
@@ -22,7 +42,6 @@
     align-items: center;
     justify-content: space-between;
 }
-
 .network img {
     cursor: pointer;
     height: 25px;
