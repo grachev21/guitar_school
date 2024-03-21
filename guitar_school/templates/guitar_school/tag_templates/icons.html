@@ -24,13 +24,6 @@
 {% endif %}
     
 
-
-    
-
-    
-
-    
-
 <style>
 .network {
     padding: 30px;
@@ -52,44 +45,28 @@
 
 <script>
 window.onload = function donenow() {
+    let network = document.querySelectorAll(".network > img")
 
-    const on = "50%"
+    const on = "30%"
     const off = "100%"
 
-    document.querySelector("img:nth-child(1)").addEventListener("mouseenter",
-        function() { changeImgOpacity(this, on, 0); });
-    document.querySelector("img:nth-child(1)").addEventListener("mouseleave",
-        function() { changeImgOpacity(this, off, 0); });
-
-    document.querySelector("img:nth-child(2)").addEventListener("mouseenter",
-        function() { changeImgOpacity(this, on, 1); });
-    document.querySelector("img:nth-child(2)").addEventListener("mouseleave",
-        function() { changeImgOpacity(this, off, 1); });
-
-    document.querySelector("img:nth-child(3)").addEventListener("mouseenter",
-        function() { changeImgOpacity(this, on, 2); });
-    document.querySelector("img:nth-child(3)").addEventListener("mouseleave",
-        function() { changeImgOpacity(this, off, 2); });
-
-    document.querySelector("img:nth-child(4)").addEventListener("mouseenter",
-        function() { changeImgOpacity(this, on, 3); });
-    document.querySelector("img:nth-child(4)").addEventListener("mouseleave",
-        function() { changeImgOpacity(this, off, 3); });
-
-    document.querySelector("img:nth-child(5)").addEventListener("mouseenter",
-        function() { changeImgOpacity(this, on, 4); });
-    document.querySelector("img:nth-child(5)").addEventListener("mouseleave",
-        function() { changeImgOpacity(this, off, 4); });
+    for (let index = 0; index < network.length; index++) {
+        
+        network[index].addEventListener("mouseenter",
+            function() { changeImgOpacity(on, index); });
+        network[index].addEventListener("mouseleave",
+            function() { changeImgOpacity(off, index); });
+    }    
 }
 
-function changeImgOpacity(el, val, number) {
+function changeImgOpacity(val, number) {
+    console.log('click', val, number)
+    let listIcons = document.querySelectorAll(".network > img")
 
-    const listIcons = document.querySelectorAll(".network > img")
-    for (let i = 0; i < 5; i ++) {
-
-        if (i !== number) {
-            listIcons[i].style.opacity = val;
-            listIcons[i].style.transition = ".2s";
+    for (let index = 0; index < listIcons.length; index++) {
+        if (index !== number) {
+            listIcons[index].style.opacity = val;
+            listIcons[index].style.transition = ".5s";
         }
     }
 }

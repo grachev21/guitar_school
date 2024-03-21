@@ -1,0 +1,11 @@
+.block_master_music {
+    width: 100%;
+}
+
+.block_master_music>.img_master> img {
+    filter: brightness(70%);
+    top: 0px;
+    width: 210px;
+    height: 210px;
+    object-fit: cover;
+}

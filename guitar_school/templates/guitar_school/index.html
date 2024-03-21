@@ -3,46 +3,63 @@
 {% load TagConfig %}
 
 {% block header %}
-    <div class="background_images">
-        
-        <div class="block_menu">
-            <a href="">{% logo %}</a>
-            <div class="menu">
-                <a href=""><h3>войти</h3></a>
-                <a href=""><h3>дом</h3></a>
-                <a href=""><h3>о нас</h3></a>
-                <a href=""><h3>контакты</h3></a>
-                <a href=""><h3>наши мастера</h3></a>
-                <a href="">
-                    <div class="lesson">забронировать урок</div>
-                </a>
-            </div>
-        </div>
-        <div class="slogan">
-            <div class="title_slogan">
-                <h1>
-                    ВДОХНОВЛЯЯ СЛЕДУЮЩЕЕ ПОКОЛЕНИЕ
-                </h1>
-            </div>
-            <div class="comment">Изучите гитару, фортепиано, гавайскую гитару, теорию музыки и музыкальное производство</div>
+<div class="background_images">
+
+    <div class="block_menu">
+        <a href="">{% logo %}</a>
+        <div class="menu">
+            <a href="">
+                <h3>войти</h3>
+            </a>
+            <a href="">
+                <h3>дом</h3>
+            </a>
+            <a href="">
+                <h3>о нас</h3>
+            </a>
+            <a href="">
+                <h3>контакты</h3>
+            </a>
+            <a href="">
+                <h3>наши мастера</h3>
+            </a>
+            <a href="">
+              <div class="lesson">
+                <h3>забронировать урок</h3>
+              </div>
+            </a>
         </div>
     </div>
+    <div class="slogan">
+        <div class="title_slogan">
+            <h1>
+                ВДОХНОВЛЯЯ СЛЕДУЮЩЕЕ ПОКОЛЕНИЕ
+            </h1>
+        </div>
+        <div class="comment">Изучите гитару, фортепиано, гавайскую гитару, теорию музыки и музыкальное производство
+        </div>
+    </div>
+</div>
 {% endblock header %}
 
 
 {% block info %}
-   <div class="info_block">
+<div class="info_block">
     <div class="title">ДОБРО ПОЖАЛОВАТЬ В MUSICK SCHOOL</div>
     <div class="text">
-        Научитесь играть в самой популярной музыкальной школе во Флинтшире и Честере. Школа гитары предлагает отмеченное наградами обучение игре на гитаре, фортепиано, барабанах, гавайской гитаре и музыкальному производству для всех возрастов и способностей. От абсолютного новичка до уровня диплома – в Школе гитары приглашаются все желающие. Научитесь играть песни, которые вы любите, или изучайте программу со всеми соответствующими экзаменационными комиссиями, включая ABRSM, Университет Западного Лондона, Лондонский музыкальный колледж и RSL.
+        Научитесь играть в самой популярной музыкальной школе во Флинтшире и Честере. Школа гитары предлагает отмеченное
+        наградами обучение игре на гитаре, фортепиано, барабанах, гавайской гитаре и музыкальному производству для всех
+        возрастов и способностей. От абсолютного новичка до уровня диплома – в Школе гитары приглашаются все желающие.
+        Научитесь играть песни, которые вы любите, или изучайте программу со всеми соответствующими экзаменационными
+        комиссиями, включая ABRSM, Университет Западного Лондона, Лондонский музыкальный колледж и RSL.
     </div>
     <div class="button"><a href="">УЗНАТЬ БОЛЬШЕ</a></div>
     {% icons color="black" %}
-   </div>
+</div>
 {% endblock info %}
 
 {% block gallery %}
-   <div class="info_block">
+<div class="info_block">
     <div class="title">НАУЧИТЕСЬ ИГРАТЬ НА</div>
     <div class="gallery">
         <div class="img_block">
@@ -74,29 +91,27 @@
             </div>
         </div>
     </div>
-   </div>
+</div>
 {% endblock gallery %}
 
 
 {% block master_musick %}
-   <div class="block_master_music">
-    <div class="img_master"></div>
+<div class="block_master_music">
+    <div class="img_master">
+        <img src="{% static 'images/IMG_5615.jpg' %}" alt="">
+    </div>
     <div class="title"></div>
     <div class="text"></div>
-   </div>
+</div>
 {% endblock master_musick %}
+    
 
 
 {% block footer %}
 <div class="footer_block">
-   <div class="title_footer">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</div>
-   <div class="message_footer">ШКОЛА МУЗЫКИ, САМАРСКАЯ ОБЛАСТЬ, РФ</div>
-   <div class="icons_footer">{% icons color="white" %}</div>
-   <div class="end_footer"></div>
+    <div class="title_footer">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</div>
+    <div class="message_footer">ШКОЛА МУЗЫКИ, САМАРСКАЯ ОБЛАСТЬ, РФ</div>
+    <div class="icons_footer">{% icons color="white" %}</div>
+    <div class="end_footer"></div>
 </div>
 {% endblock footer %}
-    
-    
-    
-    
-    
